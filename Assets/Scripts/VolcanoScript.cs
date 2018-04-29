@@ -1,42 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VolcanoScript : MonoBehaviour {
 	public GameObject tamevol; 
 	public GameObject hunvol; 
-	bool tame = false;
-	bool hunka = false;
+	public GameObject vol; 
+	public Image buttonImage;
+	public int tame = 1;
+	public int stame = 0;
+	float timer = 0.0f;
+	public Sprite voltame;
 	// Use this for initialization
 	void Start () {
 		tamevol.SetActive (false);
 		hunvol.SetActive (false);
+		buttonImage = this.GetComponent<Image>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (tame) {
-			bido ();
+		if (stame == 1) {
+			timer += Time.deltaTime;
 		}
-		if (hunka) {
-			hassya ();
+		if (timer >= 3.0f) {
+			vol.SetActive (false);
+			hunvol.SetActive (true);
 		}
 	}
 
-	public void PushDown(){
-		tame = true;
+	public void renda(){
+		buttonImage.sprite = voltame; 
+		stame = 1;
+		tame++;
 	}
 
-	public void PushUp(){
-		tame = false;
-		hunka = true;
-	}
-
-	void bido(){
-		tamevol.SetActive (true);
-	}
-
-	void hassya(){
-		hunvol.SetActive (true);
-	}
 }
