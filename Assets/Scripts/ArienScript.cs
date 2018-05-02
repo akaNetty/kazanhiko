@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ArienScript : MonoBehaviour {
 	GameObject arien;
 	float avoid = 3.0f;
+	float timer = 0;
+	float meter = 0;
 	bool lefty = false;
 	bool righty = false;
 	public static int  speed = 1;
@@ -16,10 +18,12 @@ public class ArienScript : MonoBehaviour {
 	void Start () {
 		speed = VolcanoScript.tame;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (speed);
+		timer += Time.deltaTime;
+		meter = timer * speed;
+		Debug.Log (meter);
 		if(righty){
 			right();
 		}
