@@ -8,9 +8,8 @@ public class VolcanoScript : MonoBehaviour {
 	public GameObject hunvol; 
 	public GameObject vol; 
 	public Image buttonImage;
-	public int tame = 1;
+	public static int tame = 1;
 	public int stame = 0;
-//	public float speed = 1.0f;
 	public float timer = 0.0f;
 	public Sprite voltame;
 	// Use this for initialization

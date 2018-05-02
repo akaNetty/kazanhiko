@@ -8,15 +8,18 @@ public class ArienScript : MonoBehaviour {
 	float avoid = 3.0f;
 	bool lefty = false;
 	bool righty = false;
+	public static int  speed = 1;
+
 
 
 	// Use this for initialization
 	void Start () {
-		
+		speed = VolcanoScript.tame;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		Debug.Log (speed);
 		if(righty){
 			right();
 		}
@@ -57,7 +60,10 @@ public class ArienScript : MonoBehaviour {
 
 	public void OnTriggerStay2D(Collider2D other){
 		if (other.tag == "Enemy") {
-			Debug.Log ("enemy!");
+			speed--;
+			Destroy (other.gameObject);
+		} else if (other.tag == "Kiryu") {
+			speed++;
 			Destroy (other.gameObject);
 		}
 	}
