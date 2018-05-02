@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: uma
+    uniqueID: 1685658309
+    locked: 0
   - name: ufo
     uniqueID: 1282920991
     locked: 0

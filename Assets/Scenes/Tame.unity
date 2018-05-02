@@ -196,6 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385570379}
   - component: {fileID: 385570378}
+  - component: {fileID: 385570380}
   m_Layer: 0
   m_Name: arien.tako
   m_TagString: Untagged
@@ -234,8 +235,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1685658309
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a845f3a8c1c4347d9b794e6dbc90f58f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -260,6 +261,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &385570380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 385570377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f00fa619bd8f423c832692ba15a7b49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arien: {fileID: 0}
+  voltage: {fileID: 0}
+  script: {fileID: 0}
 --- !u!1 &694489383
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +415,8 @@ MonoBehaviour:
   buttonImage: {fileID: 0}
   tame: 1
   stame: 0
+  speed: 1
+  timer: 0
   voltame: {fileID: 21300000, guid: da787b84ddfee45158d4daf6965eea8d, type: 3}
 --- !u!1 &985001212
 GameObject:
@@ -588,7 +605,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1809373245314716, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}

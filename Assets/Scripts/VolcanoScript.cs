@@ -10,7 +10,8 @@ public class VolcanoScript : MonoBehaviour {
 	public Image buttonImage;
 	public int tame = 1;
 	public int stame = 0;
-	float timer = 0.0f;
+//	public float speed = 1.0f;
+	public float timer = 0.0f;
 	public Sprite voltame;
 	// Use this for initialization
 	void Start () {
@@ -23,10 +24,11 @@ public class VolcanoScript : MonoBehaviour {
 	void Update () {
 		if (stame == 1) {
 			timer += Time.deltaTime;
-		}
-		if (timer >= 3.0f) {
-			vol.SetActive (false);
-			hunvol.SetActive (true);
+			if (timer >= 3.0f) {
+				vol.SetActive (false);
+				hunvol.SetActive (true);
+
+			}
 		}
 	}
 
@@ -34,6 +36,7 @@ public class VolcanoScript : MonoBehaviour {
 		buttonImage.sprite = voltame; 
 		stame = 1;
 		tame++;
+		Debug.Log (tame);
 	}
 
 }
