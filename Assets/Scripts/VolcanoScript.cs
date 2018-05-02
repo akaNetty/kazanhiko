@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class VolcanoScript : MonoBehaviour {
 	public GameObject tamevol; 
 	public GameObject hunvol; 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HassyaScript : MonoBehaviour {
 	public GameObject arien;
@@ -20,6 +21,10 @@ public class HassyaScript : MonoBehaviour {
 		float timer = script.timer;
 		if (timer >= 3.0f) {
 			transform.position += Vector3.up * speed * Time.deltaTime;
+		}
+
+		if (transform.position.y >= 8) {
+			SceneManager.LoadScene ("Main");
 		}
 	}
 }
