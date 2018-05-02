@@ -10,13 +10,13 @@ public class ArienScript : MonoBehaviour {
 	float meter = 0;
 	bool lefty = false;
 	bool righty = false;
-	public static int  speed = 1;
+	public static float  speed = 1;
 
 
 
 	// Use this for initialization
 	void Start () {
-		speed = VolcanoScript.tame;
+		speed = VolcanoScript.tame * 0.5f;
 	}
 
 	// Update is called once per frame

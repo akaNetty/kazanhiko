@@ -17,7 +17,7 @@ public class HassyaScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		int speed = VolcanoScript.tame;
+		float speed = VolcanoScript.tame * 0.5f;
 		float timer = script.timer;
 		if (timer >= 3.0f) {
 			transform.position += Vector3.up * speed * Time.deltaTime;

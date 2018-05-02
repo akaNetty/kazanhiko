@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyScript : MonoBehaviour {
-	public int speed = 1;
+	public float speed = 1;
 
 	// Use this for initialization
 	void Start () {

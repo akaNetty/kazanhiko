@@ -9,7 +9,7 @@ public class VolcanoScript : MonoBehaviour {
 	public GameObject hunvol; 
 	public GameObject vol; 
 	public Image buttonImage;
-	public static int tame = 1;
+	public static float tame = 1;
 	public int stame = 0;
 	public float timer = 0.0f;
 	public Sprite voltame;
