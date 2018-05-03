@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UniversScript : MonoBehaviour {
 	public float speed = 1;
-	public GameObject arien;
+	public GameObject time;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,7 +16,7 @@ public class UniversScript : MonoBehaviour {
 		speed = ArienScript.speed;
 		if (transform.position.y <= -1.8) {
 			speed = 0;
-			arien.SendMessage ("Stop");
+			time.SendMessage ("Stop");
 		}
 
 		transform.position += Vector3.down * speed * Time.deltaTime;

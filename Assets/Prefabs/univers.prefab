@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  arien: {fileID: 0}
+  time: {fileID: 1606404810601154, guid: 6d42abb5ed0f841fb999400ed2e78f11, type: 2}
 --- !u!212 &212005843703596124
 SpriteRenderer:
   m_ObjectHideFlags: 1

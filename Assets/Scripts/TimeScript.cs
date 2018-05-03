@@ -23,6 +23,7 @@ public class TimeScript : MonoBehaviour {
 	}
 
 	void Stop(){
+		Debug.Log ("stop!");
 		ufo = true;
 	}
 }

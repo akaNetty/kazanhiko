@@ -69,9 +69,9 @@ public class EnemyGenerator : MonoBehaviour {
 			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
 			flag = 9;
 		}
-		if (meter > 90 && flag ==9) {
-			Instantiate(univers,new Vector2(transform.position.x,9),Quaternion.Euler(-180, 0, 0));
-			flag = 10;
-		}
+//		if (meter > 90 && flag ==9) {
+//			Instantiate(univers,new Vector2(transform.position.x,9),Quaternion.Euler(-180, 0, 0));
+//			flag = 10;
+//		}
 	}
 }
