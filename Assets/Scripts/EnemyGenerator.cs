@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyGenerator : MonoBehaviour {
-	public GameObject doron;
-	public GameObject kiryu;
-	public GameObject hikoki;
-	public GameObject inseki;
-	public GameObject kamihikoki;
-
+	public GameObject[] Syogai;
+	int number;
 	// Use this for initialization
 	void Start () {
-		
+		number = Random.Range (0, Syogai.Length);
+		Instantiate(Syogai[number],transform.position,transform.rotation);
 	}
 	
 	// Update is called once per frame

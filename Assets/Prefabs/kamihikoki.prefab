@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4892318600550560}
   - component: {fileID: 212476745128774216}
   - component: {fileID: 58794245212020390}
+  - component: {fileID: 114498321825900338}
   m_Layer: 0
   m_Name: kamihikoki
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,6 +57,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.195
+--- !u!114 &114498321825900338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1283199640541632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a472a4036412b4af18c3552417f0ef6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!212 &212476745128774216
 SpriteRenderer:
   m_ObjectHideFlags: 1

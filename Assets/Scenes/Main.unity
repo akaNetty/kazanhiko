@@ -171,25 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f69aedbdc08274c159e1c1cffc879262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  arien: {fileID: 750316204}
---- !u!1 &527291937 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1087341414271878, guid: be1bd4f552b8a43ec98ec98ccd012fe4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1144815939}
---- !u!114 &527291938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 527291937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a472a4036412b4af18c3552417f0ef6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   speed: 1
+  arien: {fileID: 750316204}
 --- !u!1 &564203720
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.22758621, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -615,16 +598,67 @@ Prefab:
     - target: {fileID: 58228473101028104, guid: be1bd4f552b8a43ec98ec98ccd012fe4,
         type: 2}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 50044302337304964, guid: be1bd4f552b8a43ec98ec98ccd012fe4,
         type: 2}
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 50044302337304964, guid: be1bd4f552b8a43ec98ec98ccd012fe4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: be1bd4f552b8a43ec98ec98ccd012fe4, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1201824757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1201824759}
+  - component: {fileID: 1201824758}
+  m_Layer: 0
+  m_Name: EnemyGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1201824758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201824757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 376271256445c46bdb90194642303b12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Syogai:
+  - {fileID: 1770874325743010, guid: 9eac5399b294246ae841303e5630224a, type: 2}
+  - {fileID: 1837982681029074, guid: 7946dc75afae7426c95485b3dec952cc, type: 2}
+  - {fileID: 1283199640541632, guid: b452af3cce660481683b63202a83dac4, type: 2}
+  - {fileID: 1087341414271878, guid: be1bd4f552b8a43ec98ec98ccd012fe4, type: 2}
+  - {fileID: 1797097961414186, guid: efd964e361bf04aae91ed88df9fb3e18, type: 2}
+  - {fileID: 1854201295469020, guid: eb27ea011c6964b548be7d5d25afa1b6, type: 2}
+  - {fileID: 1476881028811306, guid: ab3f0f2fc148f48c4803109fb24f0b26, type: 2}
+  - {fileID: 1819266107452382, guid: 92f50159c4d6b44e38c68b1c25edc94d, type: 2}
+  - {fileID: 1662940601549722, guid: 75c6921c4bc4449a09f7a5ccae5da9bd, type: 2}
+--- !u!4 &1201824759
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201824757}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1334177687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,7 +1222,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4544867921519184, guid: 69732db5171ea4684bbd84e607e83510, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 51.7
+      value: 14.4
       objectReference: {fileID: 0}
     - target: {fileID: 4544867921519184, guid: 69732db5171ea4684bbd84e607e83510, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1214,12 +1248,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 50573101329293742, guid: 69732db5171ea4684bbd84e607e83510,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 69732db5171ea4684bbd84e607e83510, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2078319210
