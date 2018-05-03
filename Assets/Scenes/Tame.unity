@@ -302,16 +302,16 @@ RectTransform:
   m_GameObject: {fileID: 694489383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.990794, y: 3.6028879, z: 3.6028879}
+  m_LocalScale: {x: 0.990794, y: 1.8014034, z: 3.6028879}
   m_Children:
   - {fileID: 328518510}
   m_Father: {fileID: 1794073593}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -125}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0.1, y: -0.05}
+  m_AnchorMax: {x: 0.9, y: 0.3}
+  m_AnchoredPosition: {x: 0, y: -5.853943}
+  m_SizeDelta: {x: -6, y: -87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694489385
 MonoBehaviour:
@@ -413,9 +413,7 @@ MonoBehaviour:
   hunvol: {fileID: 1201342531}
   vol: {fileID: 694489383}
   buttonImage: {fileID: 0}
-  tame: 1
   stame: 0
-  speed: 1
   timer: 0
   voltame: {fileID: 21300000, guid: da787b84ddfee45158d4daf6965eea8d, type: 3}
 --- !u!1 &985001212
@@ -573,11 +571,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4820288765326038, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.031661987
       objectReference: {fileID: 0}
     - target: {fileID: 4820288765326038, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -3.368332
       objectReference: {fileID: 0}
     - target: {fileID: 4820288765326038, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -585,15 +583,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4820288765326038, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4820288765326038, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4820288765326038, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4820288765326038, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
       propertyPath: m_LocalRotation.w
@@ -601,11 +599,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4820288765326038, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1809373245314716, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820288765326038, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.162555
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820288765326038, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.1770868
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820288765326038, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.1625549
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 862d11092cda449eeb4f7764d046f2d0, type: 2}
@@ -652,7 +662,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4366883607931416, guid: 0df47ca79b335456bae15264a936f42f, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4366883607931416, guid: 0df47ca79b335456bae15264a936f42f, type: 2}
       propertyPath: m_LocalScale.x
@@ -728,12 +738,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 240, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -814,7 +824,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4359445388077942, guid: f18bb64c304b04823b116e219dfb6df1, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1012513821163478, guid: f18bb64c304b04823b116e219dfb6df1, type: 2}
       propertyPath: m_IsActive
