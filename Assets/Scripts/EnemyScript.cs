@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour {
 	public float speed = 1;
 	float timer = 0;
-	float meter = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +16,7 @@ public class EnemyScript : MonoBehaviour {
 		speed = ArienScript.speed;
 	
 		timer += Time.deltaTime;
-		meter = timer * speed;
-		Debug.Log (meter);
+
 
 		transform.position += Vector3.down * speed * Time.deltaTime;
 	}
