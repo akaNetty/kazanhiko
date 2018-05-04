@@ -8,10 +8,12 @@ public class VolcanoScript : MonoBehaviour {
 	public GameObject tamevol; 
 	public GameObject hunvol; 
 	public GameObject vol; 
+	public Text text;
 	public Image buttonImage;
 	public static float tame = 1;
 	public int stame = 0;
 	public float timer = 0.0f;
+	public float nokori = 3.0f;
 	public Sprite voltame;
 	// Use this for initialization
 	void Start () {
@@ -24,6 +26,8 @@ public class VolcanoScript : MonoBehaviour {
 	void Update () {
 		if (stame == 1) {
 			timer += Time.deltaTime;
+			nokori = 3.0f-timer;
+			text.text =  "あと" +nokori.ToString ("f1");
 			if (timer >= 3.0f) {
 				vol.SetActive (false);
 				hunvol.SetActive (true);
