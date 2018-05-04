@@ -33,7 +33,8 @@ public class EnemyGenerator : MonoBehaviour {
 		if (meter > 10 && meter <= 20 && flag ==1) {
 			number = Random.Range (0, 3);
 			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
-			Instantiate(kiryuu,new Vector2(x,13),transform.rotation);
+			float x1 = Random.Range (-3.0f, 3.0f);
+			Instantiate(kiryuu,new Vector2(x1,13),transform.rotation);
 			flag = 2;
 		}
 		if (meter > 20 && meter <=30 && flag ==2) {
@@ -49,7 +50,8 @@ public class EnemyGenerator : MonoBehaviour {
 		if (meter > 40 && meter <=50 && flag ==4) {
 			number = Random.Range (3, 6);
 			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
-			Instantiate(kiryuu,new Vector2(x,13),transform.rotation);
+			float x1 = Random.Range (-3.0f, 3.0f);
+			Instantiate(kiryuu,new Vector2(x1,13),transform.rotation);
 			flag = 5;
 		}
 		if (meter > 50 && meter <=60 && flag ==5) {
@@ -65,7 +67,8 @@ public class EnemyGenerator : MonoBehaviour {
 		if (meter > 70 && meter <=80 && flag ==7) {
 			number = Random.Range (6, Syogai.Length);
 			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
-			Instantiate(kiryuu,new Vector2(x,13),transform.rotation);
+			float x1 = Random.Range (-3.0f, 3.0f);
+			Instantiate(kiryuu,new Vector2(x1,13),transform.rotation);
 			flag = 8;
 		}
 		if (meter > 80 && meter <=90 && flag ==8) {
