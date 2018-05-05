@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 694489386}
   - component: {fileID: 694489385}
   - component: {fileID: 694489388}
+  - component: {fileID: 694489389}
   m_Layer: 5
   m_Name: voltage
   m_TagString: Untagged
@@ -492,6 +493,17 @@ MonoBehaviour:
   timer: 0
   nokori: 3
   voltame: {fileID: 21300000, guid: da787b84ddfee45158d4daf6965eea8d, type: 3}
+--- !u!114 &694489389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 694489383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62fcdd8bc031745c880395fc2a7b67b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &985001212
 GameObject:
   m_ObjectHideFlags: 0

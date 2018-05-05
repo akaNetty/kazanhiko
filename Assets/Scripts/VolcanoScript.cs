@@ -41,6 +41,7 @@ public class VolcanoScript : MonoBehaviour {
 		stame = 1;
 		tame++;
 		Debug.Log (tame);
+		vol.SendMessage ("Vibe");
 	}
 
 }

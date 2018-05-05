@@ -6,7 +6,6 @@ public class VibrateAndroid : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -52,5 +51,9 @@ public class VibrateAndroid : MonoBehaviour {
 				Handheld.Vibrate();
 		}
 
+	}
+
+	void Vibe(){
+		VibrateAndroid.Vibration.Vibrate (50);
 	}
 }

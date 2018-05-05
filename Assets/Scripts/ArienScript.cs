@@ -60,12 +60,12 @@ public class ArienScript : MonoBehaviour {
 
 	public void OnTriggerStay2D(Collider2D other){
 		if (other.tag == "Enemy") {
-			if (speed > 1) {
-				speed--;
+			if (speed > 2) {
+				speed = speed - 2;
 			}
 			Destroy (other.gameObject);
 		} else if (other.tag == "Kiryu") {
-			speed++;
+			speed = speed + 2;
 			Destroy (other.gameObject);
 		}
 	}
