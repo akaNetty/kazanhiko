@@ -11,6 +11,7 @@ public class EnemyGenerator : MonoBehaviour {
 	float timer =0;
 	float meter = 0;
 	int flag = 0;
+	int Kumo = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -26,9 +27,10 @@ public class EnemyGenerator : MonoBehaviour {
 		Debug.Log (meter);
 
 		float x = Random.Range (-3.0f, 3.0f);
-
-		if (meter % 5 <= 0.5f ) {
-			Instantiate (kumo, new Vector2 (x, 9), transform.rotation);
+		if (Kumo == 0) {
+			if (meter % 5 <= 0.2f) {
+				Instantiate (kumo, new Vector2 (x, 9), transform.rotation);
+			}
 		}
 
 
@@ -87,5 +89,9 @@ public class EnemyGenerator : MonoBehaviour {
 //			Instantiate(univers,new Vector2(transform.position.x,9),Quaternion.Euler(-180, 0, 0));
 //			flag = 10;
 //		}
+	}
+
+	void Finish(){
+		Kumo = 1;
 	}
 }

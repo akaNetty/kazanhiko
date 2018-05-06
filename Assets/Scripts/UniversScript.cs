@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class UniversScript : MonoBehaviour {
 	public float speed = 1;
 	public GameObject time;
+	public GameObject EnemyGenerator;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,6 +18,7 @@ public class UniversScript : MonoBehaviour {
 		if (transform.position.y <= -1.8) {
 			speed = 0;
 			time.SendMessage ("Stop");
+			EnemyGenerator.SendMessage("Finish");
 		}
 
 		transform.position += Vector3.down * speed * Time.deltaTime;

@@ -215,6 +215,11 @@ Prefab:
       propertyPath: time
       value: 
       objectReference: {fileID: 294616046}
+    - target: {fileID: 114113250562277714, guid: 4cc6cad6a396e42d38b1f18a3a680051,
+        type: 2}
+      propertyPath: EnemyGenerator
+      value: 
+      objectReference: {fileID: 1201824757}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4cc6cad6a396e42d38b1f18a3a680051, type: 2}
   m_IsPrefabParent: 0
