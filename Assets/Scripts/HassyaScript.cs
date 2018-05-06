@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class HassyaScript : MonoBehaviour {
 	public GameObject arien;
 	public GameObject voltage;
+	public GameObject magma;
 	public VolcanoScript script;
 
 
 	// Use this for initialization
 	void Start () {
+		magma.SetActive (false);
 		voltage = GameObject.Find("voltage");
 		script = voltage.GetComponent<VolcanoScript> ();
 	}
@@ -20,6 +22,7 @@ public class HassyaScript : MonoBehaviour {
 		float speed = VolcanoScript.tame * 0.5f;
 		float timer = script.timer;
 		if (timer >= 3.0f) {
+			magma.SetActive (true);
 			transform.position += Vector3.up * speed * Time.deltaTime;
 		}
 

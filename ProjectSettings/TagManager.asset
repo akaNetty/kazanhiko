@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Kiryu
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -54,4 +55,7 @@ TagManager:
     locked: 0
   - name: volcano
     uniqueID: 573876587
+    locked: 0
+  - name: tame
+    uniqueID: 3257098275
     locked: 0
