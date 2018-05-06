@@ -184,7 +184,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4031522925377084, guid: 4cc6cad6a396e42d38b1f18a3a680051, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 135
+      value: 246
       objectReference: {fileID: 0}
     - target: {fileID: 4031522925377084, guid: 4cc6cad6a396e42d38b1f18a3a680051, type: 2}
       propertyPath: m_LocalPosition.z
@@ -588,6 +588,7 @@ MonoBehaviour:
   - {fileID: 1662940601549722, guid: 75c6921c4bc4449a09f7a5ccae5da9bd, type: 2}
   univers: {fileID: 1112009257963496, guid: 4cc6cad6a396e42d38b1f18a3a680051, type: 2}
   kiryuu: {fileID: 1621549309937084, guid: 43aafa3278dcb4023938d471da57d3d3, type: 2}
+  kumo: {fileID: 1103053586607236, guid: 9af676faacd754f09a82c1462660741b, type: 2}
 --- !u!4 &1201824759
 Transform:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class EnemyGenerator : MonoBehaviour {
 	public GameObject[] Syogai;
 	public GameObject univers;
 	public GameObject kiryuu;
+	public GameObject kumo;
 	int number;
 	float timer =0;
 	float meter = 0;
@@ -13,7 +14,8 @@ public class EnemyGenerator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		float x = Random.Range (-3.0f, 3.0f);
+		Instantiate (kumo, new Vector2 (x, 4), transform.rotation);
 	}
 	
 	// Update is called once per frame
@@ -24,6 +26,11 @@ public class EnemyGenerator : MonoBehaviour {
 		Debug.Log (meter);
 
 		float x = Random.Range (-3.0f, 3.0f);
+
+		if (meter % 5 <= 0.5f ) {
+			Instantiate (kumo, new Vector2 (x, 9), transform.rotation);
+		}
+
 
 		if (meter <= 10 && flag ==0) {
 			number = Random.Range (0, 3);

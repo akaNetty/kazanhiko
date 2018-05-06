@@ -8,10 +8,12 @@ public class VolcanoScript : MonoBehaviour {
 	public GameObject tamevol; 
 	public GameObject hunvol; 
 	public GameObject vol; 
+
 	public Text text;
 	public Image buttonImage;
 	public static float tame = 1;
 	public int stame = 0;
+	public float jikan = 0.0f;
 	public float timer = 0.0f;
 	public float nokori = 3.0f;
 	public Sprite voltame;
@@ -37,11 +39,14 @@ public class VolcanoScript : MonoBehaviour {
 	}
 
 	public void renda(){
+//		vol.gameObject.transform.localScale = new Vector3 (1.2f, 2.2f, 0);
 		buttonImage.sprite = voltame; 
 		stame = 1;
 		tame++;
 		Debug.Log (tame);
 		vol.SendMessage ("Vibe");
+
+//		vol.gameObject.transform.localScale = new Vector3 (1.0f, 1.8f, 0);
 	}
 
 }
