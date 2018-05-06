@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ArienScript : MonoBehaviour {
 	GameObject arien;
 	float avoid = 3.0f;
