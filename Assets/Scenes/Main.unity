@@ -223,6 +223,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4cc6cad6a396e42d38b1f18a3a680051, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &150435190 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1112009257963496, guid: 4cc6cad6a396e42d38b1f18a3a680051,
+    type: 2}
+  m_PrefabInternal: {fileID: 150435189}
 --- !u!1 &294616046 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1606404810601154, guid: 6d42abb5ed0f841fb999400ed2e78f11,
@@ -591,7 +596,7 @@ MonoBehaviour:
   - {fileID: 1476881028811306, guid: ab3f0f2fc148f48c4803109fb24f0b26, type: 2}
   - {fileID: 1819266107452382, guid: 92f50159c4d6b44e38c68b1c25edc94d, type: 2}
   - {fileID: 1662940601549722, guid: 75c6921c4bc4449a09f7a5ccae5da9bd, type: 2}
-  univers: {fileID: 1112009257963496, guid: 4cc6cad6a396e42d38b1f18a3a680051, type: 2}
+  univers: {fileID: 150435190}
   kiryuu: {fileID: 1621549309937084, guid: 43aafa3278dcb4023938d471da57d3d3, type: 2}
   kumo: {fileID: 1103053586607236, guid: 9af676faacd754f09a82c1462660741b, type: 2}
 --- !u!4 &1201824759

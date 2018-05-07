@@ -24,7 +24,7 @@ public class EnemyGenerator : MonoBehaviour {
 		timer += Time.deltaTime;
 		float speed = ArienScript.speed;
 		meter = timer * speed;
-		Debug.Log (meter);
+		Debug.Log (flag);
 
 		float x = Random.Range (-3.0f, 3.0f);
 		if (Kumo == 0) {
@@ -80,15 +80,16 @@ public class EnemyGenerator : MonoBehaviour {
 			Instantiate(kiryuu,new Vector2(x1,13),transform.rotation);
 			flag = 8;
 		}
-		if (meter > 80 && meter <=90 && flag ==8) {
+		if (meter > 80 && meter <=100 && flag ==8) {
 			number = Random.Range (6, Syogai.Length);
 			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
 			flag = 9;
 		}
-//		if (meter > 90 && flag ==9) {
-//			Instantiate(univers,new Vector2(transform.position.x,9),Quaternion.Euler(-180, 0, 0));
-//			flag = 10;
-//		}
+		if (meter > 120 && flag ==9) {
+			univers.transform.position = new Vector3 (0, 9,0);
+			univers.transform.eulerAngles = new Vector3(-180, 0, 0);
+			flag = 10;
+		}
 	}
 
 	void Finish(){

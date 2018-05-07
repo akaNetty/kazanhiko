@@ -489,6 +489,7 @@ MonoBehaviour:
   tamevol: {fileID: 1948997441}
   hunvol: {fileID: 1201342531}
   vol: {fileID: 694489383}
+  animator: {fileID: 694489390}
   text: {fileID: 32599105}
   buttonImage: {fileID: 0}
   stame: 0
@@ -656,7 +657,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 2093109202
+  randomSeed: 1610938175
   InitialModule:
     serializedVersion: 3
     enabled: 1

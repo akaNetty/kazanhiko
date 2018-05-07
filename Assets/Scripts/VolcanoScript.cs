@@ -8,7 +8,7 @@ public class VolcanoScript : MonoBehaviour {
 	public GameObject tamevol; 
 	public GameObject hunvol; 
 	public GameObject vol; 
-
+	public Animator animator;
 	public Text text;
 	public Image buttonImage;
 	public static float tame = 1;
@@ -45,7 +45,7 @@ public class VolcanoScript : MonoBehaviour {
 		tame++;
 		Debug.Log (tame);
 		vol.SendMessage ("Vibe");
-
+		animator.SetTrigger ("dokan");
 //		vol.gameObject.transform.localScale = new Vector3 (1.0f, 1.8f, 0);
 	}
 
