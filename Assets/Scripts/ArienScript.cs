@@ -84,6 +84,7 @@ public class ArienScript : MonoBehaviour {
 				speed = speed - 2;
 			}
 			Destroy (other.gameObject);
+			camera.SendMessage ("Vibe");
 			camera.SendMessage ("ShakeObject");
 		} else if (other.tag == "Kiryu") {
 			speed = speed + 2;
