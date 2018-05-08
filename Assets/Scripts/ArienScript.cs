@@ -9,6 +9,7 @@ public class ArienScript : MonoBehaviour {
 	float avoid = 3.0f;
 	bool lefty = false;
 	bool righty = false;
+	bool defo = true;
 	public static float  speed = 1;
 
 
@@ -28,22 +29,30 @@ public class ArienScript : MonoBehaviour {
 		if(lefty){
 			left();
 		}
+		if (defo) {
+			def();
+		}
 	}
 
 	public void rPushDown(){
 		righty = true;
+		defo = false;
 	}
 
 	public void rPushUp(){
 		righty = false;
+		defo = true;
+
 	}
 
 	public void lPushDown(){
 		lefty = true;
+		defo = false;
 	}
 
 	public void lPushUp(){
 		lefty = false;
+		defo = true;
 	}
 
 
@@ -51,13 +60,19 @@ public class ArienScript : MonoBehaviour {
 	public void left(){
 		if (transform.position.x >= -2.5) {
 			transform.position += new Vector3 (-avoid * Time.deltaTime, 0, 0);
+			transform.rotation = Quaternion.Euler (0, 20, 10);
 		}
 	}
 
 	public void right(){
 		if (transform.position.x <= 2.5) {
 			transform.position += new Vector3 (avoid * Time.deltaTime, 0, 0);
+			transform.rotation = Quaternion.Euler (0, -20, -10);
 		}
+	}
+
+	public void def(){
+		transform.rotation = Quaternion.Euler (0, 0, 0);
 	}
 
 	public void OnTriggerStay2D(Collider2D other){
