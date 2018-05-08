@@ -22,6 +22,7 @@ public class VolcanoScript : MonoBehaviour {
 		tamevol.SetActive (false);
 		hunvol.SetActive (false);
 		buttonImage = this.GetComponent<Image>();
+		tame = 0;
 	}
 	
 	// Update is called once per frame

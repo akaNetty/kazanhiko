@@ -18,6 +18,8 @@ public class UniversScript : MonoBehaviour {
 		if (transform.position.y <= -1.8) {
 			speed = 0;
 			time.SendMessage ("Stop");
+		}
+		if (transform.position.y <= -0.8) {
 			EnemyGenerator.SendMessage("Finish");
 		}
 

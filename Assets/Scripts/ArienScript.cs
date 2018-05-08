@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class ArienScript : MonoBehaviour {
 	GameObject arien;
+	GameObject bang;
+	public GameObject camera;
 	float avoid = 3.0f;
 	bool lefty = false;
 	bool righty = false;
@@ -75,19 +77,19 @@ public class ArienScript : MonoBehaviour {
 		transform.rotation = Quaternion.Euler (0, 0, 0);
 	}
 
-	public void OnTriggerStay2D(Collider2D other){
+	public void OnTriggerEnter2D(Collider2D other){
+		
 		if (other.tag == "Enemy") {
 			if (speed > 2) {
 				speed = speed - 2;
 			}
 			Destroy (other.gameObject);
+			camera.SendMessage ("ShakeObject");
 		} else if (other.tag == "Kiryu") {
 			speed = speed + 2;
 			Destroy (other.gameObject);
 		}
 	}
-
-
-
+		
 }
 

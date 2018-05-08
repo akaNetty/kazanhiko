@@ -167,6 +167,16 @@ Prefab:
       propertyPath: Goal
       value: 
       objectReference: {fileID: 1556109324}
+    - target: {fileID: 70999485526410260, guid: 5b6a99b8039c34a86b22813a4e96cb61,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114953095184693556, guid: 5b6a99b8039c34a86b22813a4e96cb61,
+        type: 2}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1334177687}
     m_RemovedComponents:
     - {fileID: 114799842037543092, guid: 5b6a99b8039c34a86b22813a4e96cb61, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5b6a99b8039c34a86b22813a4e96cb61, type: 2}
@@ -624,6 +634,7 @@ GameObject:
   - component: {fileID: 1334177689}
   - component: {fileID: 1334177688}
   - component: {fileID: 1334177692}
+  - component: {fileID: 1334177693}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -703,6 +714,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cc5d8c500bab490381ceb5dca013b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1334177693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1334177687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18ce7f3e6c5dd4d4bbb58aa61ad92404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1444658281
