@@ -36,6 +36,6 @@ public class TimeScript : MonoBehaviour {
 	}
 
 	public void retry(){
-		SceneManager.LoadScene ("Tame");
+		SceneManager.LoadScene ("Title");
 	}
 }
