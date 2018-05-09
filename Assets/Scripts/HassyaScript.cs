@@ -8,6 +8,10 @@ public class HassyaScript : MonoBehaviour {
 	public GameObject voltage;
 	public GameObject magma;
 	public VolcanoScript script;
+	public AudioSource dokanSound;
+	bool hassya = false;
+	bool kanryo = false;
+
 
 
 	// Use this for initialization
@@ -21,7 +25,11 @@ public class HassyaScript : MonoBehaviour {
 	void Update () {
 		float speed = VolcanoScript.tame * 0.5f;
 		float timer = script.timer;
+		if (hassya == true && kanryo == false) {
+			Sound ();
+		}
 		if (timer >= 3.0f) {
+			hassya = true;
 			magma.SetActive (true);
 			transform.position += Vector3.up * speed * Time.deltaTime;
 		}
@@ -29,5 +37,10 @@ public class HassyaScript : MonoBehaviour {
 		if (transform.position.y >= 8) {
 			SceneManager.LoadScene ("Main");
 		}
+	}
+
+	void Sound(){
+		dokanSound.Play ();
+		kanryo = true;
 	}
 }

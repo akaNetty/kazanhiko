@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class title : MonoBehaviour {
 	bool go = false;
+	public AudioSource okSound;
 
 	// Use this for initialization
 	void Start () {
@@ -25,5 +26,6 @@ public class title : MonoBehaviour {
 
 	public void start(){
 		go = true;
+		okSound.Play();
 	}
 }

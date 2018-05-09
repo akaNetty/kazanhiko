@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class ArienScript : MonoBehaviour {
 	GameObject arien;
 	GameObject bang;
+	public AudioSource doSound;
+	public AudioSource hyuoSound;
 	public GameObject camera;
 	float avoid = 3.0f;
 	bool lefty = false;
@@ -83,11 +85,13 @@ public class ArienScript : MonoBehaviour {
 			if (speed > 2) {
 				speed = speed - 2;
 			}
+			doSound.Play ();
 			Destroy (other.gameObject);
 			camera.SendMessage ("Vibe");
 			camera.SendMessage ("ShakeObject");
 		} else if (other.tag == "Kiryu") {
 			speed = speed + 2;
+			hyuoSound.Play ();
 			Destroy (other.gameObject);
 		}
 	}
