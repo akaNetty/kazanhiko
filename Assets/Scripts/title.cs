@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 public class title : MonoBehaviour {
 	bool go = false;
 	public AudioSource okSound;
+	public GameObject ufo;
+	public Animator ufoaway;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +19,7 @@ public class title : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (go) {
+			ufo.SendMessage ("away");
 			transform.position += Vector3.down * 7.0f * Time.deltaTime;
 		}
 		if (transform.position.y <= -1.449997) {
@@ -27,5 +30,6 @@ public class title : MonoBehaviour {
 	public void start(){
 		go = true;
 		okSound.Play();
+		ufoaway.SetBool ("away",true);
 	}
 }
