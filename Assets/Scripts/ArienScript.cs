@@ -82,15 +82,15 @@ public class ArienScript : MonoBehaviour {
 	public void OnTriggerEnter2D(Collider2D other){
 		
 		if (other.tag == "Enemy") {
-			if (speed > 2) {
-				speed = speed - 2;
+			if (speed > 3) {
+				speed = speed - 3;
 			}
 			doSound.Play ();
 			Destroy (other.gameObject);
 			camera.SendMessage ("Vibe");
 			camera.SendMessage ("ShakeObject");
 		} else if (other.tag == "Kiryu") {
-			speed = speed + 2;
+			speed = speed + 3;
 			hyuoSound.Play ();
 			Destroy (other.gameObject);
 		}
