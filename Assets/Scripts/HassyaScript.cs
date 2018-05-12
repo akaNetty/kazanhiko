@@ -7,6 +7,11 @@ public class HassyaScript : MonoBehaviour {
 	public GameObject arien;
 	public GameObject voltage;
 	public GameObject magma;
+	public GameObject tako;
+	public GameObject hito;
+	public GameObject tuno;
+	public int stage;
+
 	public VolcanoScript script;
 	public AudioSource dokanSound;
 	bool hassya = false;
@@ -19,6 +24,19 @@ public class HassyaScript : MonoBehaviour {
 		magma.SetActive (false);
 		voltage = GameObject.Find("voltage");
 		script = voltage.GetComponent<VolcanoScript> ();
+		stage = title.stage;
+		if (stage == 1) {
+			hito.SetActive (false);
+			tuno.SetActive (false);
+		}
+		if (stage == 2) {
+			tako.SetActive (false);
+			tuno.SetActive (false);
+		}
+		if (stage == 3) {
+			tako.SetActive (false);
+			hito.SetActive (false);
+		}
 	}
 
 	// Update is called once per frame

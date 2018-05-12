@@ -17,6 +17,7 @@ public class EnemyGenerator : MonoBehaviour {
 	void Start () {
 		float x = Random.Range (-3.0f, 3.0f);
 		Instantiate (kumo, new Vector2 (x, 4), transform.rotation);
+
 	}
 	
 	// Update is called once per frame
@@ -33,60 +34,59 @@ public class EnemyGenerator : MonoBehaviour {
 			}
 		}
 
-
-		if (meter <= 10 && flag ==0) {
+		if (flag ==0) {
 			number = Random.Range (0, 3);
-			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
+			Instantiate(Syogai[number],new Vector2(x,12),transform.rotation);
 			flag = 1;
 		}
-		if (meter > 10 && meter <= 20 && flag ==1) {
+		if (flag ==1) {
 			number = Random.Range (0, 3);
-			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
+			Instantiate(Syogai[number],new Vector2(x,12*2),transform.rotation);
 			float x1 = Random.Range (-3.0f, 3.0f);
-			Instantiate(kiryuu,new Vector2(x1,13),transform.rotation);
+			Instantiate(kiryuu,new Vector2(x1,12*2+5),transform.rotation);
 			flag = 2;
 		}
-		if (meter > 20 && meter <=30 && flag ==2) {
+		if (flag ==2) {
 			number = Random.Range (0, 3);
-			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
+			Instantiate(Syogai[number],new Vector2(x,12*3),transform.rotation);
 			flag = 3;
 		}
-		if (meter > 30 && meter <=40 && flag ==3) {
+		if (flag ==3) {
 			number = Random.Range (3, 6);
-			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
+			Instantiate(Syogai[number],new Vector2(x,12*4),transform.rotation);
 			flag = 4;
 		}
-		if (meter > 40 && meter <=50 && flag ==4) {
+		if (flag ==4) {
 			number = Random.Range (3, 6);
-			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
+			Instantiate(Syogai[number],new Vector2(x,12*5),transform.rotation);
 			float x1 = Random.Range (-3.0f, 3.0f);
-			Instantiate(kiryuu,new Vector2(x1,13),transform.rotation);
+			Instantiate(kiryuu,new Vector2(x1,12*5+5),transform.rotation);
 			flag = 5;
 		}
-		if (meter > 50 && meter <=60 && flag ==5) {
+		if (flag ==5) {
 			number = Random.Range (3, 6);
-			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
+			Instantiate(Syogai[number],new Vector2(x,12*6),transform.rotation);
 			flag = 6;
 		}
-		if (meter > 60 && meter <=70 && flag ==6) {
+		if (flag ==6) {
 			number = Random.Range (6, Syogai.Length);
-			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
+			Instantiate(Syogai[number],new Vector2(x,12*7),transform.rotation);
 			flag = 7;
 		}
-		if (meter > 70 && meter <=80 && flag ==7) {
+		if (flag ==7) {
 			number = Random.Range (6, Syogai.Length);
-			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
+			Instantiate(Syogai[number],new Vector2(x,12*8),transform.rotation);
 			float x1 = Random.Range (-3.0f, 3.0f);
-			Instantiate(kiryuu,new Vector2(x1,13),transform.rotation);
+			Instantiate(kiryuu,new Vector2(x1,12*8+5),transform.rotation);
 			flag = 8;
 		}
-		if (meter > 80 && meter <=100 && flag ==8) {
+		if (flag ==8) {
 			number = Random.Range (6, Syogai.Length);
-			Instantiate(Syogai[number],new Vector2(x,9),transform.rotation);
+			Instantiate(Syogai[number],new Vector2(x,12*9),transform.rotation);
 			flag = 9;
 		}
-		if (meter > 120 && flag ==9) {
-			univers.transform.position = new Vector3 (0, 9,0);
+		if (flag ==9) {
+			univers.transform.position = new Vector3 (0, 12*10,0);
 			univers.transform.eulerAngles = new Vector3(-180, 0, 0);
 			flag = 10;
 		}

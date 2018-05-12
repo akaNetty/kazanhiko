@@ -10,6 +10,10 @@ public class ArienScript : MonoBehaviour {
 	public AudioSource doSound;
 	public AudioSource hyuoSound;
 	public GameObject camera;
+	public GameObject tako;
+	public GameObject hito;
+	public GameObject tuno;
+	public int stage;
 	float avoid = 3.0f;
 	bool lefty = false;
 	bool righty = false;
@@ -21,6 +25,19 @@ public class ArienScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		speed = VolcanoScript.tame * 0.5f;
+		stage = title.stage;
+		if (stage == 1) {
+			hito.SetActive (false);
+			tuno.SetActive (false);
+		}
+		if (stage == 2) {
+			tako.SetActive (false);
+			tuno.SetActive (false);
+		}
+		if (stage == 3) {
+			tako.SetActive (false);
+			hito.SetActive (false);
+		}
 
 	}
 

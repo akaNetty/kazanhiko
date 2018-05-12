@@ -10,10 +10,21 @@ public class title : MonoBehaviour {
 	public AudioSource okSound;
 	public GameObject ufo;
 	public Animator ufoaway;
+	public GameObject selectbutton;
+	public GameObject titletext;
+	public GameObject sta1;
+	public GameObject sta2;
+	public GameObject sta3;
+	public GameObject tako;
+	public GameObject hito;
+	public GameObject tuno;
+	public static int stage = 1;
 
 	// Use this for initialization
 	void Start () {
-		
+		sta1.SetActive (false);
+		sta2.SetActive (false);
+		sta3.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -32,4 +43,35 @@ public class title : MonoBehaviour {
 		okSound.Play();
 		ufoaway.SetBool ("away",true);
 	}
+
+	public void selectstage(){
+		okSound.Play();
+		selectbutton.SetActive (false);
+		titletext.SetActive (false);
+		sta1.SetActive (true);
+		sta2.SetActive (true);
+		sta3.SetActive (true);
+	}
+
+	public void  stage1(){
+		stage = 1;
+		hito.SetActive (false);
+		tuno.SetActive (false);
+		start ();
+	}
+
+	public void  stage2(){
+		stage = 2;
+		tako.SetActive (false);
+		tuno.SetActive (false);
+		start ();
+	}
+
+	public void  stage3(){
+		stage = 3;
+		tako.SetActive (false);
+		hito.SetActive (false);
+		start ();
+	}
+
 }
