@@ -13,12 +13,14 @@ public class ArienScript : MonoBehaviour {
 	public GameObject tako;
 	public GameObject hito;
 	public GameObject tuno;
+	public Slider height;
 	public int stage;
 	float avoid = 3.0f;
 	bool lefty = false;
 	bool righty = false;
 	bool defo = true;
 	public static float  speed = 1;
+
 
 
 
@@ -43,7 +45,6 @@ public class ArienScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
 		if(righty){
 			right();
 		}

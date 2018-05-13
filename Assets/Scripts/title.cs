@@ -11,6 +11,7 @@ public class title : MonoBehaviour {
 	public GameObject ufo;
 	public Animator ufoaway;
 	public GameObject selectbutton;
+	public GameObject rankingbutton;
 	public GameObject titletext;
 	public GameObject sta1;
 	public GameObject sta2;
@@ -47,6 +48,7 @@ public class title : MonoBehaviour {
 	public void selectstage(){
 		okSound.Play();
 		selectbutton.SetActive (false);
+		rankingbutton.SetActive (false);
 		titletext.SetActive (false);
 		sta1.SetActive (true);
 		sta2.SetActive (true);
