@@ -8,16 +8,21 @@ public class UniversScript : MonoBehaviour {
 	public GameObject time;
 	public GameObject EnemyGenerator;
 	public Slider height;
-	public float kyori = 0;
+	public float kyori = 120;
 	public float takasa = 0;
+	public int stage;
+
 	// Use this for initialization
 	void Start () {
 		height = GameObject.Find("Height").GetComponent<Slider>();
+		stage = title.stage;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		kyori = 120;
+		if (stage == 2) {
+			kyori = 91;
+		}
 		height.maxValue = kyori;
 		Debug.Log (kyori);
 		takasa = 120 - transform.position.y + 1.8f;

@@ -8,16 +8,15 @@ public class EnemyScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 
 	// Update is called once per frame
 	void Update () {
+		
 		speed = ArienScript.speed;
 	
 		timer += Time.deltaTime;
-
-
 		transform.position += Vector3.down * speed * Time.deltaTime;
 	}
 }
