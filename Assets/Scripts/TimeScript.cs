@@ -7,12 +7,12 @@ using System;
 
 public class TimeScript : MonoBehaviour {
 	public Text timeLabel;
-	public Text goal;
 	public GameObject Goal;
 	public GameObject Retry;
 	float timer = 0.0f;
 	bool ufo = false;
 	int flag = 1;
+
 	DateTime startTime;
 	DateTime now;
 
@@ -29,6 +29,7 @@ public class TimeScript : MonoBehaviour {
 		TimeSpan deltaTime = now - startTime;
 		if (ufo == false) {
 			timer += Time.deltaTime;
+
 			timeLabel.text =  "Time : "  +timer.ToString ("f1");
 
 
@@ -45,7 +46,6 @@ public class TimeScript : MonoBehaviour {
 		ufo = true;
 		Goal.SetActive (true);
 		Retry.SetActive (true);
-		goal.text = "GOAL" + "\n" + "Time:" +timer.ToString ("f1");
 
 
 		DateTime now = DateTime.Now;
