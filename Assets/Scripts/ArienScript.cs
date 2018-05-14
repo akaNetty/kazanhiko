@@ -35,10 +35,12 @@ public class ArienScript : MonoBehaviour {
 		if (stage == 2) {
 			tako.SetActive (false);
 			tuno.SetActive (false);
+			avoid = 5.0f;
 		}
 		if (stage == 3) {
 			tako.SetActive (false);
 			hito.SetActive (false);
+			avoid = 5.0f;
 		}
 
 	}
@@ -105,7 +107,7 @@ public class ArienScript : MonoBehaviour {
 			}
 			doSound.Play ();
 			Destroy (other.gameObject);
-			camera.SendMessage ("Vibe");
+//			camera.SendMessage ("Vibe");
 			camera.SendMessage ("ShakeObject");
 		} else if (other.tag == "Kiryu") {
 			speed = speed + 3;

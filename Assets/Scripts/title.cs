@@ -32,9 +32,11 @@ public class title : MonoBehaviour {
 	void Update () {
 		if (go) {
 			ufo.SendMessage ("away");
-			transform.position += Vector3.down * 7.0f * Time.deltaTime;
-		}
-		if (transform.position.y <= -1.449997) {
+			if (transform.position.y >= -1.36f) {
+					transform.position += Vector3.down * 7.0f * Time.deltaTime;
+				}
+			}
+		if (transform.position.y < -1.36f) {
 			SceneManager.LoadScene ("Tame");
 		}
 	}

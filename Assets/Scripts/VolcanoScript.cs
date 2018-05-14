@@ -46,7 +46,7 @@ public class VolcanoScript : MonoBehaviour {
 		stame = 1;
 		tame++;
 		dogaSound.Play ();
-		vol.SendMessage ("Vibe");
+//		vol.SendMessage ("Vibe");
 		animator.SetTrigger ("dokan");
 		//		vol.gameObject.transform.localScale = new Vector3 (1.0f, 1.8f, 0);;
 	}

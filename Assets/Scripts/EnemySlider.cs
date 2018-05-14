@@ -33,13 +33,13 @@ public class EnemySlider : MonoBehaviour {
 
 	}
 	void right(){
-		if (transform.position.y <= 2.0f) {
+		if (transform.position.y <= 10.0f) {
 			transform.position += Vector3.right * speed * Time.deltaTime * 0.2f;
 		}
 	}
 
 	void left(){
-		if (transform.position.y <= 2.0f) {
+		if (transform.position.y <= 10.0f) {
 			transform.position += Vector3.left * speed * Time.deltaTime * 0.2f;
 		}
 	}

@@ -8,7 +8,7 @@ public class UniversScript : MonoBehaviour {
 	public GameObject time;
 	public GameObject EnemyGenerator;
 	public Slider height;
-	public float kyori = 120;
+	public float kyori = 264;
 	public float takasa = 0;
 	public int stage;
 
@@ -21,11 +21,11 @@ public class UniversScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (stage == 2) {
-			kyori = 91;
+			kyori = 231;
 		}
 		height.maxValue = kyori;
 		Debug.Log (kyori);
-		takasa = 120 - transform.position.y + 1.8f;
+		takasa = kyori - transform.position.y + 1.8f;
 		height.value = takasa;
 		speed = ArienScript.speed;
 		if (transform.position.y <= -1.8) {
