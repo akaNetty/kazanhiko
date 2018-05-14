@@ -53,6 +53,8 @@ public class TimeScript : MonoBehaviour {
 
 //		var millsec = 123456;
 //		var timeScore = new System.TimeSpan (0, 0, 0, 0, millsec);
+
+
 		var timeScore = deltaTime;
 		naichilab.RankingLoader.Instance.SendScoreAndShowRanking (timeScore);
 
