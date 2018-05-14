@@ -19,6 +19,7 @@ public class title : MonoBehaviour {
 	public GameObject tako;
 	public GameObject hito;
 	public GameObject tuno;
+	public GameObject modoru;
 	public static int stage = 1;
 
 	// Use this for initialization
@@ -26,6 +27,7 @@ public class title : MonoBehaviour {
 		sta1.SetActive (false);
 		sta2.SetActive (false);
 		sta3.SetActive (false);
+		modoru.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -55,6 +57,7 @@ public class title : MonoBehaviour {
 		sta1.SetActive (true);
 		sta2.SetActive (true);
 		sta3.SetActive (true);
+		modoru.SetActive (true);
 	}
 
 	public void  stage1(){
@@ -76,6 +79,16 @@ public class title : MonoBehaviour {
 		tako.SetActive (false);
 		hito.SetActive (false);
 		start ();
+	}
+
+	public void back(){
+		selectbutton.SetActive (true);
+		rankingbutton.SetActive (true);
+		titletext.SetActive (true);
+		sta1.SetActive (false);
+		sta2.SetActive (false);
+		sta3.SetActive (false);
+		modoru.SetActive (false);
 	}
 
 }

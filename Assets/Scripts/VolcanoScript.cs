@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class VolcanoScript : MonoBehaviour {
 	public GameObject tamevol; 
 	public GameObject hunvol; 
 	public GameObject vol; 
+	public GameObject modoru;
 	public Animator animator;
 	public AudioSource dogaSound;
 	public Text text;
@@ -46,9 +48,12 @@ public class VolcanoScript : MonoBehaviour {
 		stame = 1;
 		tame++;
 		dogaSound.Play ();
-//		vol.SendMessage ("Vibe");
+		vol.SendMessage ("Vibe");
 		animator.SetTrigger ("dokan");
 		//		vol.gameObject.transform.localScale = new Vector3 (1.0f, 1.8f, 0);;
 	}
 
+	public void back(){
+		SceneManager.LoadScene ("Title");
+	}
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ArienScript : MonoBehaviour {
@@ -13,6 +14,7 @@ public class ArienScript : MonoBehaviour {
 	public GameObject tako;
 	public GameObject hito;
 	public GameObject tuno;
+	public GameObject modoru;
 	public Slider height;
 	public int stage;
 	float avoid = 5.0f;
@@ -107,13 +109,17 @@ public class ArienScript : MonoBehaviour {
 			}
 			doSound.Play ();
 			Destroy (other.gameObject);
-//			camera.SendMessage ("Vibe");
+			camera.SendMessage ("Vibe");
 			camera.SendMessage ("ShakeObject");
 		} else if (other.tag == "Kiryu") {
 			speed = speed + 3;
 			hyuoSound.Play ();
 			Destroy (other.gameObject);
 		}
+	}
+
+	public void back(){
+		SceneManager.LoadScene ("Tame");
 	}
 		
 }
