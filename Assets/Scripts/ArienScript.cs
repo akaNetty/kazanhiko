@@ -15,7 +15,7 @@ public class ArienScript : MonoBehaviour {
 	public GameObject tuno;
 	public Slider height;
 	public int stage;
-	float avoid = 3.0f;
+	float avoid = 5.0f;
 	bool lefty = false;
 	bool righty = false;
 	bool defo = true;

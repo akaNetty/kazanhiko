@@ -79,7 +79,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (0, 3);
 				Instantiate (Syogai [number], new Vector2 (x, a * 5), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 5 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 5 + 5), transform.rotation);
 				flag = 5;
 			}
 			if (flag == 5) {
@@ -99,7 +99,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (0, 3);
 				Instantiate (Syogai [number], new Vector2 (x, a * 8), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 8 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 8 + 5), transform.rotation);
 				flag = 8;
 			}
 			if (flag == 8) {
@@ -119,7 +119,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (3, 6);
 				Instantiate (Syogai [number], new Vector2 (x, a * 11), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 11 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 11 + 5), transform.rotation);
 				flag = 11;
 			}
 			if (flag == 11) {
@@ -139,7 +139,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (3, 6);
 				Instantiate (Syogai [number], new Vector2 (x, a * 14), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 14 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 14 + 5), transform.rotation);
 				flag = 14;
 			}
 			if (flag == 14) {
@@ -159,7 +159,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (6, Syogai.Length);
 				Instantiate (Syogai [number], new Vector2 (x, a * 17), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 17 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 17 + 5), transform.rotation);
 				flag = 17;
 			}
 			if (flag == 17) {
@@ -179,7 +179,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (6, Syogai.Length);
 				Instantiate (Syogai [number], new Vector2 (x, a * 20), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 20 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 20 + 5), transform.rotation);
 				flag = 20;
 			}
 			if (flag == 20) {
@@ -226,7 +226,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (0, 3);
 				Instantiate (Syogai [number], new Vector2 (x, a * 5), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 5 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 5 + 5), transform.rotation);
 				flag = 5;
 			}
 			if (flag == 5) {
@@ -246,7 +246,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (0, 3);
 				Instantiate (Syogai [number], new Vector2 (x, a * 8), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 8 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 8 + 5), transform.rotation);
 				flag = 8;
 			}
 			if (flag == 8) {
@@ -266,7 +266,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (0, 3);
 				Instantiate (Syogai [number], new Vector2 (x, a * 11), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 11 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 11 + 5), transform.rotation);
 				flag = 11;
 			}
 			if (flag == 11) {
@@ -286,7 +286,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (3, 6);
 				Instantiate (Syogai [number], new Vector2 (x, a * 14), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 14 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 14 + 5), transform.rotation);
 				flag = 14;
 			}
 			if (flag == 14) {
@@ -306,7 +306,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (3, 6);
 				Instantiate (Syogai [number], new Vector2 (x, a * 17), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 17 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 17 + 5), transform.rotation);
 				flag = 17;
 			}
 			if (flag == 17) {
@@ -326,7 +326,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (3, 6);
 				Instantiate (Syogai [number], new Vector2 (x, a * 20), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 20 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 20 + 5), transform.rotation);
 				flag = 20;
 			}
 			if (flag == 20) {
@@ -346,7 +346,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (6, Syogai.Length);
 				Instantiate (Syogai [number], new Vector2 (x, a * 23), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 25 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 25 + 5), transform.rotation);
 				flag = 23;
 			}
 			if (flag == 23) {
@@ -366,7 +366,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (6, Syogai.Length);
 				Instantiate (Syogai [number], new Vector2 (x, a * 26), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 26 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 26 + 5), transform.rotation);
 				flag = 26;
 			}
 			if (flag == 26) {
@@ -386,7 +386,7 @@ public class EnemyGenerator : MonoBehaviour {
 				number = Random.Range (6, Syogai.Length);
 				Instantiate (Syogai [number], new Vector2 (x, a * 29), transform.rotation);
 				float x1 = Random.Range (-3.0f, 3.0f);
-				Instantiate (kiryuu, new Vector2 (x1, 12 * 29 + 5), transform.rotation);
+				Instantiate (kiryuu, new Vector2 (x1, a * 29 + 5), transform.rotation);
 				flag = 29;
 			}
 			if (flag == 30) {
