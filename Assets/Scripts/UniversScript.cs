@@ -11,6 +11,8 @@ public class UniversScript : MonoBehaviour {
 	public float kyori = 264;
 	public float takasa = 0;
 	public int stage;
+	public int flag=1;
+
 
 	// Use this for initialization
 	void Start () {
@@ -30,7 +32,10 @@ public class UniversScript : MonoBehaviour {
 		speed = ArienScript.speed;
 		if (transform.position.y <= -1.8) {
 			speed = 0;
-			time.SendMessage ("Stop");
+			if (flag == 1) {
+				time.SendMessage ("Stop");
+				flag = 2;
+			}
 		}
 		if (transform.position.y <= -0.8) {
 			EnemyGenerator.SendMessage("Finish");
