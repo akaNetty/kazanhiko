@@ -65,7 +65,6 @@ public class title : MonoBehaviour {
 		star31.SetActive (false);
 		modoru.SetActive (false);
 		rankingpanel.SetActive (false);
-
 	}
 	
 	// Update is called once per frame
