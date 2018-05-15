@@ -88,10 +88,6 @@ public class TimeScript : MonoBehaviour {
 		DateTime now = DateTime.Now;
 		TimeSpan deltaTime = now - startTime;
 
-//		var millsec = 123456;
-//		var timeScore = new System.TimeSpan (0, 0, 0, 0, millsec);
-
-
 		var timeScore = deltaTime;
 
 		if (rank == 2) {
