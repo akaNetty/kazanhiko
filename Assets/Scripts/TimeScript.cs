@@ -38,6 +38,7 @@ public class TimeScript : MonoBehaviour {
 	public float sanq3 = 0;
 	public float yonq3 = 0;
 	public int stage;
+	public int rank;
 	float timer = 0.0f;
 	bool ufo = false;
 	int flag = 1;
@@ -52,6 +53,7 @@ public class TimeScript : MonoBehaviour {
 		Goal.SetActive (false);
 		Retry.SetActive (false);
 		stage = title.stage;
+		rank = title.rank;
 
 	}
 	
@@ -91,112 +93,116 @@ public class TimeScript : MonoBehaviour {
 
 
 		var timeScore = deltaTime;
-//		return delta.ToString ("HH:ss");
 
+		if (rank == 2) {
+			
+			naichilab.RankingLoader.Instance.SendScoreAndShowRanking (timeScore);
+		}
 
-//		naichilab.RankingLoader.Instance.SendScoreAndShowRanking (timeScore);
+		if (rank == 1) {
 
+			if (stage == 1) {
+				if (timer <= gous1) {
+					gous1 = timer;
 
-		if(stage == 1){
-			if (timer <= gous1) {
-				gous1 = timer;
+					if (timer <= yons1) {
+						yonq1 = yons1;
+						gous1 = yonq1;
 
-				if (timer <= yons1) {
-					yonq1 = yons1;
-					gous1 = yonq1;
+						yons1 = timer; 
 
-					yons1 = timer; 
+						if (timer <= sans1) {
+							sanq1 = sans1;
+							yons1 = sanq1;
 
-					if (timer <= sans1) {
-						sanq1 = sans1;
-						yons1 = sanq1;
+							sans1 = timer;
 
-						sans1 = timer;
+							if (timer <= nis1) {
+								niq1 = nis1;
+								sans1 = niq1;
 
-						if (timer <= nis1) {
-							niq1 = nis1;
-							sans1 = niq1;
+								nis1 = timer;
 
-							nis1 = timer;
+								if (timer <= itis1) {
+									itiq1 = itis1;
+									nis1 = itiq1;
 
-							if (timer <= itis1) {
-								itiq1 = itis1;
-								nis1 = itiq1;
+									itis1 = timer;
 
-								itis1 = timer;
-
+								}
 							}
 						}
 					}
 				}
 			}
-		}
 
 
-		if(stage == 2){
-			if (timer <= gous2) {
-				gous2 = timer;
+			if (stage == 2) {
+				if (timer <= gous2) {
+					gous2 = timer;
 
-				if (timer <= yons2) {
-					yonq2 = yons2;
-					gous2 = yonq2;
+					if (timer <= yons2) {
+						yonq2 = yons2;
+						gous2 = yonq2;
 
-					yons2 = timer; 
+						yons2 = timer; 
 
-					if (timer <= sans2) {
-						sanq2 = sans2;
-						yons2 = sanq2;
+						if (timer <= sans2) {
+							sanq2 = sans2;
+							yons2 = sanq2;
 
-						sans2 = timer;
+							sans2 = timer;
 
-						if (timer <= nis2) {
-							niq2 = nis2;
-							sans2 = niq2;
+							if (timer <= nis2) {
+								niq2 = nis2;
+								sans2 = niq2;
 
-							nis2 = timer;
+								nis2 = timer;
 
-							if (timer <= itis2) {
-								itiq2 = itis2;
-								nis2 = itiq2;
+								if (timer <= itis2) {
+									itiq2 = itis2;
+									nis2 = itiq2;
 
-								itis2 = timer;
+									itis2 = timer;
 
+								}
 							}
 						}
 					}
 				}
 			}
-		}
+		
 
 
-		if(stage == 3){
-			if (timer <= gous3) {
-				gous3 = timer;
+			if (stage == 3) {
+				if (timer <= gous3) {
+					gous3 = timer;
 
-				if (timer <= yons3) {
-					yonq3 = yons3;
-					gous3 = yonq3;
+					if (timer <= yons3) {
+						yonq3 = yons3;
+						gous3 = yonq3;
 
-					yons3 = timer; 
+						yons3 = timer; 
 
-					if (timer <= sans3) {
-						sanq3 = sans3;
-						yons3 = sanq3;
+						if (timer <= sans3) {
+							sanq3 = sans3;
+							yons3 = sanq3;
 
-						sans3 = timer;
+							sans3 = timer;
 
-						if (timer <= nis3) {
-							niq3 = nis3;
-							sans3 = niq3;
+							if (timer <= nis3) {
+								niq3 = nis3;
+								sans3 = niq3;
 
-							nis3 = timer;
+								nis3 = timer;
 
-							if (timer <= itis3) {
-								itiq3 = itis3;
-								nis3 = itiq3;
+								if (timer <= itis3) {
+									itiq3 = itis3;
+									nis3 = itiq3;
 
-								itis3 = timer;
+									itis3 = timer;
 
+								}
 							}
 						}
 					}
@@ -204,6 +210,7 @@ public class TimeScript : MonoBehaviour {
 			}
 		}
 			
+
 
 	}
 

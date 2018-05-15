@@ -28,6 +28,9 @@ public class title : MonoBehaviour {
 	public GameObject tuno;
 	public GameObject modoru;
 	public GameObject rankingpanel;
+	public GameObject hitori;
+	public GameObject zenkoku;
+	public GameObject zensta3;
 	public Text Caption;
 	public Text ii;
 	public Text aru;
@@ -50,6 +53,7 @@ public class title : MonoBehaviour {
 	public static float yons3 = 99999;
 	public static float gous3 = 99999;
 	public static int stage = 1;
+	public static int rank = 1;
 
 
 	// Use this for initialization
@@ -65,6 +69,9 @@ public class title : MonoBehaviour {
 		star31.SetActive (false);
 		modoru.SetActive (false);
 		rankingpanel.SetActive (false);
+		hitori.SetActive (false);
+		zenkoku.SetActive (false);
+		zensta3.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -110,6 +117,8 @@ public class title : MonoBehaviour {
 		sta2.SetActive (true);
 		sta3.SetActive (true);
 		modoru.SetActive (true);
+		hitori.SetActive (true);
+		zenkoku.SetActive (true);
 	}
 
 	public void ranking(){
@@ -260,6 +269,7 @@ public class title : MonoBehaviour {
 
 	public void  stage1(){
 		stage = 1;
+		rank = 1;
 		hito.SetActive (false);
 		tuno.SetActive (false);
 		start ();
@@ -267,6 +277,7 @@ public class title : MonoBehaviour {
 
 	public void  stage2(){
 		stage = 2;
+		rank = 1;
 		tako.SetActive (false);
 		tuno.SetActive (false);
 		start ();
@@ -274,6 +285,7 @@ public class title : MonoBehaviour {
 
 	public void  stage3(){
 		stage = 3;
+		rank = 1;
 		tako.SetActive (false);
 		hito.SetActive (false);
 		start ();
@@ -295,7 +307,42 @@ public class title : MonoBehaviour {
 		star31.SetActive (false);
 		rankingpanel.SetActive (false);
 		modoru.SetActive (false);
+		hitori.SetActive (false);
+		zenkoku.SetActive (false);
+		zensta3.SetActive (false);
 
 	}
 
+	public void hitor(){
+		okSound.Play();
+		selectbutton.SetActive (false);
+		rankingbutton.SetActive (false);
+		titletext.SetActive (false);
+		sta1.SetActive (true);
+		sta2.SetActive (true);
+		sta3.SetActive (true);
+		modoru.SetActive (true);
+		zensta3.SetActive (false);
+
+	}
+
+	public void zenkok(){
+		okSound.Play();
+		selectbutton.SetActive (false);
+		rankingbutton.SetActive (false);
+		titletext.SetActive (false);
+		sta1.SetActive (false);
+		sta2.SetActive (false);
+		sta3.SetActive (false);
+		modoru.SetActive (true);
+		zensta3.SetActive (true);
+	}
+
+	public void zen3(){
+		stage = 3;
+		rank = 2;
+		tako.SetActive (false);
+		hito.SetActive (false);
+		start ();
+	}
 }
