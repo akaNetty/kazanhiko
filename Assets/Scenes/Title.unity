@@ -1042,16 +1042,12 @@ MonoBehaviour:
   tuno: {fileID: 707972161}
   modoru: {fileID: 1560783692}
   rankingpanel: {fileID: 2097603041}
+  Caption: {fileID: 1354842137}
   ii: {fileID: 1884077293}
   aru: {fileID: 203918448}
   sen: {fileID: 1850042088}
   sue: {fileID: 1160122542}
   uu: {fileID: 797317325}
-  iti: 99999
-  ni: 99999
-  san: 99999
-  yon: 99999
-  gou: 99999
 --- !u!82 &293102513
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2480,16 +2476,12 @@ MonoBehaviour:
   tuno: {fileID: 707972161}
   modoru: {fileID: 1560783692}
   rankingpanel: {fileID: 2097603041}
+  Caption: {fileID: 1354842137}
   ii: {fileID: 1884077293}
   aru: {fileID: 203918448}
   sen: {fileID: 1850042088}
   sue: {fileID: 1160122542}
   uu: {fileID: 797317325}
-  iti: 99999
-  ni: 99999
-  san: 99999
-  yon: 99999
-  gou: 99999
 --- !u!82 &707972163
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3626,16 +3618,12 @@ MonoBehaviour:
   tuno: {fileID: 707972161}
   modoru: {fileID: 1560783692}
   rankingpanel: {fileID: 2097603041}
+  Caption: {fileID: 1354842137}
   ii: {fileID: 1884077293}
   aru: {fileID: 203918448}
   sen: {fileID: 1850042088}
   sue: {fileID: 1160122542}
   uu: {fileID: 797317325}
-  iti: 99999
-  ni: 99999
-  san: 99999
-  yon: 99999
-  gou: 99999
 --- !u!82 &1345516277
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4970,7 +4958,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2097603042
 RectTransform:
   m_ObjectHideFlags: 0

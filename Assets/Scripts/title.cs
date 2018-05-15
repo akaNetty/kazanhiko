@@ -28,18 +28,29 @@ public class title : MonoBehaviour {
 	public GameObject tuno;
 	public GameObject modoru;
 	public GameObject rankingpanel;
+	public Text Caption;
 	public Text ii;
 	public Text aru;
 	public Text sen;
 	public Text sue;
 	public Text uu;
-	public float iti = 99999;
-	public float ni = 99999;
-	public float san = 99999;
-	public float yon = 99999;
-	public float gou = 99999;
-
+	public static float itis1 = 99999;
+	public static float nis1 = 99999;
+	public static float sans1 = 99999;
+	public static float yons1 = 99999;
+	public static float gous1 = 99999;
+	public static float itis2 = 99999;
+	public static float nis2 = 99999;
+	public static float sans2 = 99999;
+	public static float yons2 = 99999;
+	public static float gous2 = 99999;
+	public static float itis3 = 99999;
+	public static float nis3 = 99999;
+	public static float sans3 = 99999;
+	public static float yons3 = 99999;
+	public static float gous3 = 99999;
 	public static int stage = 1;
+
 
 	// Use this for initialization
 	void Start () {
@@ -54,15 +65,26 @@ public class title : MonoBehaviour {
 		star31.SetActive (false);
 		modoru.SetActive (false);
 		rankingpanel.SetActive (false);
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		iti = TimeScript.iti;
-		ni = TimeScript.ni;
-		san = TimeScript.san;
-		yon = TimeScript.yon;
-		gou = TimeScript.gou;
+		itis1 = TimeScript.itis1;
+		nis1 = TimeScript.nis1;
+		sans1 = TimeScript.sans1;
+		yons1 = TimeScript.yons1;
+		gous1 = TimeScript.gous1;
+		itis2 = TimeScript.itis2;
+		nis2 = TimeScript.nis2;
+		sans2 = TimeScript.sans2;
+		yons2 = TimeScript.yons2;
+		gous2 = TimeScript.gous2;
+		itis3 = TimeScript.itis3;
+		nis3 = TimeScript.nis3;
+		sans3 = TimeScript.sans3;
+		yons3 = TimeScript.yons3;
+		gous3 = TimeScript.gous3;
 		if (go) {
 			ufo.SendMessage ("away");
 			if (transform.position.y >= -1.36f) {
@@ -100,11 +122,32 @@ public class title : MonoBehaviour {
 		star2.SetActive (true);
 		star3.SetActive (true);
 		rankingpanel.SetActive (true);
-		ii.text = iti.ToString("f1");
-		aru.text = ni.ToString("f1");
-		sen.text = san.ToString("f1");
-		sue.text = yon.ToString("f1");
-		uu.text = gou.ToString("f1");
+		Caption.text = "STAGE 1";
+		if (itis1 != 99999) {
+			ii.text = itis1.ToString ("f1");
+		} else {
+			ii.text = ("ーーー");
+		}
+		if (nis1 != 99999) {
+			aru.text = nis1.ToString("f1");
+		}else {
+			aru.text = ("ーーー");
+		}
+		if (sans1 != 99999) {
+			sen.text = sans1.ToString ("f1");
+		}else {
+			sen.text = ("ーーー");
+		}
+		if (yons1 != 99999) {
+			sue.text = yons1.ToString ("f1");
+		}else {
+			sue.text = ("ーーー");
+		}
+		if (gous1 != 99999) {
+			uu.text = gous1.ToString ("f1");
+		}else {
+			uu.text = ("ーーー");
+		}
 	}
 
 	public void stager1(){
@@ -115,12 +158,32 @@ public class title : MonoBehaviour {
 		star11.SetActive (true);
 		star21.SetActive (false);
 		star31.SetActive (false);
-		ii.text = iti.ToString("f1");
-		aru.text = ni.ToString("f1");
-		sen.text = san.ToString("f1");
-		sue.text = yon.ToString("f1");
-		uu.text = gou.ToString("f1");
-
+		Caption.text = "STAGE 1";
+		if (itis1 != 99999) {
+			ii.text = itis1.ToString ("f1");
+		} else {
+			ii.text = ("ーーー");
+		}
+		if (nis1 != 99999) {
+			aru.text = nis1.ToString("f1");
+		}else {
+			aru.text = ("ーーー");
+		}
+		if (sans1 != 99999) {
+			sen.text = sans1.ToString ("f1");
+		}else {
+			sen.text = ("ーーー");
+		}
+		if (yons1 != 99999) {
+			sue.text = yons1.ToString ("f1");
+		}else {
+			sue.text = ("ーーー");
+		}
+		if (gous1 != 99999) {
+			uu.text = gous1.ToString ("f1");
+		}else {
+			uu.text = ("ーーー");
+		}
 	}
 
 	public void stager2(){
@@ -131,11 +194,32 @@ public class title : MonoBehaviour {
 		star11.SetActive (false);
 		star21.SetActive (true);
 		star31.SetActive (false);
-		ii.text = iti.ToString("f1");
-		aru.text = ni.ToString("f1");
-		sen.text = san.ToString("f1");
-		sue.text = yon.ToString("f1");
-		uu.text = gou.ToString("f1");
+		Caption.text = "STAGE 2";
+		if (itis2 != 99999) {
+			ii.text = itis2.ToString ("f1");
+		} else {
+			ii.text = ("ーーー");
+		}
+		if (nis2 != 99999) {
+			aru.text = nis2.ToString("f1");
+		}else {
+			aru.text = ("ーーー");
+		}
+		if (sans2 != 99999) {
+			sen.text = sans2.ToString ("f1");
+		}else {
+			sen.text = ("ーーー");
+		}
+		if (yons2 != 99999) {
+			sue.text = yons2.ToString ("f1");
+		}else {
+			sue.text = ("ーーー");
+		}
+		if (gous2 != 99999) {
+			uu.text = gous2.ToString ("f1");
+		}else {
+			uu.text = ("ーーー");
+		}
 	}
 
 	public void stager3(){
@@ -146,12 +230,32 @@ public class title : MonoBehaviour {
 		star11.SetActive (false);
 		star21.SetActive (false);
 		star31.SetActive (true);
-		ii.text = iti.ToString("f1");
-		aru.text = ni.ToString("f1");
-		sen.text = san.ToString("f1");
-		sue.text = yon.ToString("f1");
-		uu.text = gou.ToString("f1");
-
+		Caption.text = "STAGE 3";
+		if (itis3 != 99999) {
+			ii.text = itis3.ToString ("f1");
+		} else {
+			ii.text = ("ーーー");
+		}
+		if (nis3 != 99999) {
+			aru.text = nis3.ToString("f1");
+		}else {
+			aru.text = ("ーーー");
+		}
+		if (sans3 != 99999) {
+			sen.text = sans3.ToString ("f1");
+		}else {
+			sen.text = ("ーーー");
+		}
+		if (yons3 != 99999) {
+			sue.text = yons3.ToString ("f1");
+		}else {
+			sue.text = ("ーーー");
+		}
+		if (gous3 != 99999) {
+			uu.text = gous3.ToString ("f1");
+		}else {
+			uu.text = ("ーーー");
+		}
 	}
 
 	public void  stage1(){
