@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   Order: 0
-  CustomFormat: mm:ss
+  CustomFormat: ss:ff

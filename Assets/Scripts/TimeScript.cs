@@ -54,7 +54,7 @@ public class TimeScript : MonoBehaviour {
 		Retry.SetActive (false);
 		stage = title.stage;
 		rank = title.rank;
-
+		startTime = DateTime.Now;
 	}
 	
 	// Update is called once per frame
@@ -68,13 +68,13 @@ public class TimeScript : MonoBehaviour {
 
 			timeLabel.text =  "Time:"  +timer.ToString ("f1");
 
-
-			if (flag == 1) {
-				DateTime startTime = DateTime.Now;
-				flag = 2;
-
-
-			}
+//
+//			if (flag == 1) {
+//				DateTime startTime = DateTime.Now;
+//				flag = 2;
+//
+//
+//			}
 		}
 
 	}
@@ -88,11 +88,11 @@ public class TimeScript : MonoBehaviour {
 		DateTime now = DateTime.Now;
 		TimeSpan deltaTime = now - startTime;
 
-		var timeScore = deltaTime;
+//		var timeScore = deltaTime;
 
 		if (rank == 2) {
 			
-			naichilab.RankingLoader.Instance.SendScoreAndShowRanking (timeScore);
+			naichilab.RankingLoader.Instance.SendScoreAndShowRanking (deltaTime);
 		}
 
 		if (rank == 1) {
