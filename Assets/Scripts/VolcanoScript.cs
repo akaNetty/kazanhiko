@@ -32,9 +32,14 @@ public class VolcanoScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (stame == 1) {
-			timer += Time.deltaTime;
-			nokori = 3.0f-timer;
-			text.text =  "あと" +nokori.ToString ("f1");
+			
+				timer += Time.deltaTime;
+				nokori = 3.0f - timer;
+			if (nokori <= 0) {
+				nokori = 0;
+			}
+				text.text = nokori.ToString ("f2");
+
 			if (timer >= 3.0f) {
 				vol.SetActive (false);
 				hunvol.SetActive (true);

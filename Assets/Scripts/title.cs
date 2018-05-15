@@ -116,6 +116,7 @@ public class title : MonoBehaviour {
 		okSound.Play();
 		selectbutton.SetActive (false);
 		rankingbutton.SetActive (false);
+		titletext.SetActive (false);
 		modoru.SetActive (true);
 		star11.SetActive (true);
 		star2.SetActive (true);

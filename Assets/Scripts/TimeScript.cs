@@ -64,7 +64,7 @@ public class TimeScript : MonoBehaviour {
 		if (ufo == false) {
 			timer += Time.deltaTime;
 
-			timeLabel.text =  "Time : "  +timer.ToString ("f1");
+			timeLabel.text =  "Time:"  +timer.ToString ("f1");
 
 
 			if (flag == 1) {
