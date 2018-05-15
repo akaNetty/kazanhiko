@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class HassyaScript : MonoBehaviour {
 	public GameObject arien;
 	public GameObject voltage;

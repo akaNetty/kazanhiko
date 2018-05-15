@@ -9,6 +9,16 @@ public class TimeScript : MonoBehaviour {
 	public Text timeLabel;
 	public GameObject Goal;
 	public GameObject Retry;
+	public TimeSpan delta;
+	public static float iti = 99999;
+	public static float ni = 99999;
+	public static float san = 99999;
+	public static float yon = 99999;
+	public static float gou = 99999;
+	public float itiq = 0;
+	public float niq = 0;
+	public float sanq = 0;
+	public float yonq = 0;
 	float timer = 0.0f;
 	bool ufo = false;
 	int flag = 1;
@@ -25,8 +35,8 @@ public class TimeScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		DateTime now = DateTime.Now;
-		TimeSpan deltaTime = now - startTime;
+//		DateTime now = DateTime.Now;
+//		TimeSpan deltaTime = now - startTime;
 		if (ufo == false) {
 			timer += Time.deltaTime;
 
@@ -40,6 +50,7 @@ public class TimeScript : MonoBehaviour {
 
 			}
 		}
+
 	}
 
 	void Stop(){
@@ -56,8 +67,34 @@ public class TimeScript : MonoBehaviour {
 
 
 		var timeScore = deltaTime;
-		naichilab.RankingLoader.Instance.SendScoreAndShowRanking (timeScore);
+//		return delta.ToString ("HH:ss");
 
+
+//		naichilab.RankingLoader.Instance.SendScoreAndShowRanking (timeScore);
+
+		if (timer <= gou) {
+			gou = timer;
+			if (timer <= yon) {
+				yonq = yon;
+				gou = yonq;
+				yon = timer; 
+				if (timer <= san) {
+					sanq = san;
+					yon = sanq;
+					san = timer;
+					if (timer <= ni) {
+						niq = ni;
+						san = niq;
+						ni = timer;
+						if (timer <= iti) {
+							itiq = iti;
+							ni = itiq;
+							iti = timer;
+						}
+					}
+				}
+			}
+		}
 
 	}
 

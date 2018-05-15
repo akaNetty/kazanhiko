@@ -10,6 +10,7 @@ public class ArienScript : MonoBehaviour {
 	GameObject bang;
 	public AudioSource doSound;
 	public AudioSource hyuoSound;
+	public AudioSource backSound;
 	public GameObject camera;
 	public GameObject tako;
 	public GameObject hito;
@@ -119,6 +120,7 @@ public class ArienScript : MonoBehaviour {
 	}
 
 	public void back(){
+		backSound.Play ();
 		SceneManager.LoadScene ("Tame");
 	}
 		

@@ -12,6 +12,7 @@ public class VolcanoScript : MonoBehaviour {
 	public GameObject modoru;
 	public Animator animator;
 	public AudioSource dogaSound;
+	public AudioSource backSound;
 	public Text text;
 	public Image buttonImage;
 	public static float tame = 1;
@@ -54,6 +55,7 @@ public class VolcanoScript : MonoBehaviour {
 	}
 
 	public void back(){
+		backSound.Play ();
 		SceneManager.LoadScene ("Title");
 	}
 }
