@@ -11,6 +11,7 @@ public class ArienScript : MonoBehaviour {
 	public AudioSource doSound;
 	public AudioSource hyuoSound;
 	public AudioSource backSound;
+	public AudioSource bgmSound;
 	public GameObject camera;
 	public GameObject tako;
 	public GameObject hito;
@@ -30,6 +31,7 @@ public class ArienScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		bgmSound.Play ();
 		speed = VolcanoScript.tame * 0.5f;
 		stage = title.stage;
 		if (stage == 1) {
