@@ -9,7 +9,6 @@ public class title : MonoBehaviour {
 	bool go = false;
 	public AudioSource okSound;
 	public AudioSource backSound;
-	public AudioSource titlebgm;
 	public GameObject ufo;
 	public Animator ufoaway;
 	public GameObject selectbutton;
@@ -73,7 +72,6 @@ public class title : MonoBehaviour {
 		hitori.SetActive (false);
 		zenkoku.SetActive (false);
 		zensta3.SetActive (false);
-		titlebgm.Play ();
 	}
 	
 	// Update is called once per frame

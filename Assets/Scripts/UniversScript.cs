@@ -12,6 +12,7 @@ public class UniversScript : MonoBehaviour {
 	public float takasa = 0;
 	public int stage;
 	public int flag=1;
+	public static int bfl = 1;
 
 
 	// Use this for initialization
@@ -34,6 +35,7 @@ public class UniversScript : MonoBehaviour {
 			speed = 0;
 			if (flag == 1) {
 				time.SendMessage ("Stop");
+				bfl = 2;
 				flag = 2;
 			}
 		}

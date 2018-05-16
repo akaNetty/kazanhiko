@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 20b8b86de892c4939a7b7b8a2f340af7
+timeCreated: 1526487354
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: 851tegakizatsu
+  fontNames:
+  - 851tegakizatsu
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

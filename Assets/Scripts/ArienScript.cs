@@ -23,6 +23,7 @@ public class ArienScript : MonoBehaviour {
 	bool righty = false;
 	bool defo = true;
 	public static float  speed = 1;
+	public static int bfl = 1;
 
 
 
@@ -122,6 +123,7 @@ public class ArienScript : MonoBehaviour {
 	public void back(){
 		backSound.Play ();
 		SceneManager.LoadScene ("Tame");
+		bfl = 2;
 	}
 		
 }
