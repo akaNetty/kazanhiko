@@ -31,6 +31,10 @@ public class title : MonoBehaviour {
 	public GameObject hitori;
 	public GameObject zenkoku;
 	public GameObject zensta3;
+	public GameObject seiseki;
+	public GameObject arina;
+	public GameObject hitna;
+	public GameObject tunna;
 	public Text Caption;
 	public Text ii;
 	public Text aru;
@@ -72,6 +76,10 @@ public class title : MonoBehaviour {
 		hitori.SetActive (false);
 		zenkoku.SetActive (false);
 		zensta3.SetActive (false);
+		seiseki.SetActive (false);
+		arina.SetActive (false);
+		hitna.SetActive (false);
+		tunna.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -130,6 +138,7 @@ public class title : MonoBehaviour {
 		star11.SetActive (true);
 		star2.SetActive (true);
 		star3.SetActive (true);
+		seiseki.SetActive (true);
 		rankingpanel.SetActive (true);
 		Caption.text = "STAGE 1";
 		if (itis1 != 99999) {
@@ -272,6 +281,10 @@ public class title : MonoBehaviour {
 		rank = 1;
 		hito.SetActive (false);
 		tuno.SetActive (false);
+		arina.SetActive (true);
+		sta1.SetActive (false);
+		sta2.SetActive (false);
+		sta3.SetActive (false);
 		start ();
 	}
 
@@ -280,6 +293,10 @@ public class title : MonoBehaviour {
 		rank = 1;
 		tako.SetActive (false);
 		tuno.SetActive (false);
+		hitna.SetActive (true);
+		sta1.SetActive (false);
+		sta2.SetActive (false);
+		sta3.SetActive (false);
 		start ();
 	}
 
@@ -288,6 +305,10 @@ public class title : MonoBehaviour {
 		rank = 1;
 		tako.SetActive (false);
 		hito.SetActive (false);
+		tunna.SetActive (true);
+		sta1.SetActive (false);
+		sta2.SetActive (false);
+		sta3.SetActive (false);
 		start ();
 	}
 
@@ -310,7 +331,7 @@ public class title : MonoBehaviour {
 		hitori.SetActive (false);
 		zenkoku.SetActive (false);
 		zensta3.SetActive (false);
-
+		seiseki.SetActive (false);
 	}
 
 	public void hitor(){
