@@ -7,7 +7,7 @@ using System;
 
 public class TimeScript : MonoBehaviour {
 	public Text timeLabel;
-	public Text goaltime;
+//	public Text goaltime;
 	public GameObject Goal;
 	public GameObject Retry;
 	public TimeSpan delta;
@@ -74,7 +74,7 @@ public class TimeScript : MonoBehaviour {
 		stage = title.stage;
 		rank = title.rank;
 		startTime = DateTime.Now;
-		goaltime.text =  "";
+//		goaltime.text =  "";
 	}
 	
 	// Update is called once per frame
@@ -118,8 +118,7 @@ public class TimeScript : MonoBehaviour {
 		ufo = true;
 		Goal.SetActive (true);
 		Retry.SetActive (true);
-
-		goaltime.text =  "Time:"  +timer.ToString ("f1");
+		timeLabel.text =  "Time:"  +timer.ToString ("f1");
 
 
 		DateTime now = DateTime.Now;
