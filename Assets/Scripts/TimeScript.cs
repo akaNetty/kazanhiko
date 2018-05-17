@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using System;
 
 public class TimeScript : MonoBehaviour {
+	public AudioSource okSound;
 	public Text timeLabel;
 	public Text goaltime;
 	public GameObject Goal;
@@ -247,6 +248,7 @@ public class TimeScript : MonoBehaviour {
 	}
 
 	public void retry(){
+		okSound.Play ();
 		SceneManager.LoadScene ("Title");
 	}
 }

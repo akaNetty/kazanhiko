@@ -64,7 +64,7 @@ public class title : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-//		bgmSound.Play ();
+		bgmSound.Play ();
 		sta1.SetActive (false);
 		sta2.SetActive (false);
 		sta3.SetActive (false);
