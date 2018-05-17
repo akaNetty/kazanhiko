@@ -36,6 +36,7 @@ public class title : MonoBehaviour {
 	public GameObject arina;
 	public GameObject hitna;
 	public GameObject tunna;
+	public GameObject zenna;
 	public Text Caption;
 	public Text ii;
 	public Text aru;
@@ -63,7 +64,7 @@ public class title : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		bgmSound.Play ();
+//		bgmSound.Play ();
 		sta1.SetActive (false);
 		sta2.SetActive (false);
 		sta3.SetActive (false);
@@ -82,6 +83,7 @@ public class title : MonoBehaviour {
 		arina.SetActive (false);
 		hitna.SetActive (false);
 		tunna.SetActive (false);
+		zenna.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -334,6 +336,7 @@ public class title : MonoBehaviour {
 		zenkoku.SetActive (false);
 		zensta3.SetActive (false);
 		seiseki.SetActive (false);
+		zenna.SetActive (false);
 	}
 
 	public void hitor(){
@@ -366,6 +369,8 @@ public class title : MonoBehaviour {
 		rank = 2;
 		tako.SetActive (false);
 		hito.SetActive (false);
+		zenna.SetActive (true);
+		zensta3.SetActive (false);
 		start ();
 	}
 }

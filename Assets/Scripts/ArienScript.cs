@@ -31,7 +31,7 @@ public class ArienScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		bgmSound.Play ();
+//		bgmSound.Play ();
 		speed = VolcanoScript.tame * 0.5f;
 		stage = title.stage;
 		if (stage == 1) {
