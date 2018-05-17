@@ -243,7 +243,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6f08479e65d4c4029a4c79f9323578ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 652ff7e5fce6240408293b2c1e0d34d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -489,7 +489,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5a73b710f152d4e0abf3296c5cc48877, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36da402b43cdb405db1eb2ba3a806feb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1196,6 +1196,7 @@ MonoBehaviour:
   hitna: {fileID: 849955892}
   tunna: {fileID: 781914011}
   zenna: {fileID: 296171907}
+  hikari: {fileID: 0}
   Caption: {fileID: 1354842137}
   ii: {fileID: 1884077293}
   aru: {fileID: 203918448}
@@ -2392,7 +2393,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c9dca25ece0f04e578db8ed0cab1602d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5002adcb94c154b31920ff225b519ddc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2648,7 +2649,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c84fb7cbf1a554b8b8af7e360dc3fc5c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 43dd6b35a2da3487fb2fd06089ac7347, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2709,8 +2710,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1685658309
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b0ece67f8833b49d38b61c5ec348d96c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2870,6 +2871,7 @@ MonoBehaviour:
   hitna: {fileID: 849955892}
   tunna: {fileID: 781914011}
   zenna: {fileID: 296171907}
+  hikari: {fileID: 0}
   Caption: {fileID: 1354842137}
   ii: {fileID: 1884077293}
   aru: {fileID: 203918448}
@@ -4675,6 +4677,7 @@ MonoBehaviour:
   hitna: {fileID: 849955892}
   tunna: {fileID: 781914011}
   zenna: {fileID: 296171907}
+  hikari: {fileID: 0}
   Caption: {fileID: 1354842137}
   ii: {fileID: 1884077293}
   aru: {fileID: 203918448}
@@ -5324,8 +5327,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1296438529
-  m_SortingLayer: -1
+  m_SortingLayerID: 1685658309
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b0ece67f8833b49d38b61c5ec348d96c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5909,7 +5912,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 851a61a818d954ebeb749d5c93d48273, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c8b54b6602a064cb891dff55de14bde3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6430,7 +6433,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c832d66f2eab24bcd91a72e61af83dfe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b3a5c1c346704c24a0e25a56421454a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

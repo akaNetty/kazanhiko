@@ -37,6 +37,7 @@ public class title : MonoBehaviour {
 	public GameObject hitna;
 	public GameObject tunna;
 	public GameObject zenna;
+	public GameObject hikari;
 	public Text Caption;
 	public Text ii;
 	public Text aru;
@@ -84,6 +85,8 @@ public class title : MonoBehaviour {
 		hitna.SetActive (false);
 		tunna.SetActive (false);
 		zenna.SetActive (false);
+		hikari.SetActive (false);
+	
 	}
 	
 	// Update is called once per frame
@@ -118,6 +121,7 @@ public class title : MonoBehaviour {
 		go = true;
 		okSound.Play();
 		ufoaway.SetBool ("away",true);
+
 	}
 
 	public void selectstage(){
@@ -131,6 +135,7 @@ public class title : MonoBehaviour {
 		modoru.SetActive (true);
 		hitori.SetActive (true);
 		zenkoku.SetActive (true);
+		hikari.SetActive (true);
 	}
 
 	public void ranking(){
@@ -337,6 +342,7 @@ public class title : MonoBehaviour {
 		zensta3.SetActive (false);
 		seiseki.SetActive (false);
 		zenna.SetActive (false);
+		hikari.SetActive (false);
 	}
 
 	public void hitor(){
