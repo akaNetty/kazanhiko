@@ -9,7 +9,6 @@ public class title : MonoBehaviour {
 	bool go = false;
 	public AudioSource okSound;
 	public AudioSource backSound;
-	public AudioSource bgmSound;
 	public GameObject ufo;
 	public Animator ufoaway;
 	public GameObject selectbutton;
@@ -64,7 +63,7 @@ public class title : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		bgmSound.Play ();
+		
 		sta1.SetActive (false);
 		sta2.SetActive (false);
 		sta3.SetActive (false);
